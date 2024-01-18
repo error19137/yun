@@ -1,30 +1,26 @@
-/* Keyframes for gradient animation */
 @keyframes gradient {
     0%, 100% {
-        background: linear-gradient(to bottom, #80ced6, #80ced6, #80ced6);
+        background: linear-gradient(to bottom, #455a64, #455a64, #455a64);
     }
     50% {
-        background: linear-gradient(to bottom, #80ced6, #80ced6, #80ced6);
+        background: linear-gradient(to bottom, #455a64, #455a64, #455a64);
     }
 }
 
-/* Body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #37474f;
     animation: gradient 10s ease-in-out infinite;
 }
 
-/* Logo styling */
 .logo {
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 svg {
     width: 30px;
     fill: #0d5eaf;
@@ -33,20 +29,18 @@ svg {
 }
 
 svg:hover {
-    fill: #004a77;
+    fill: #e90606;
 }
 
-/* Header styling */
 header {
-    background-color: #37474f;
+    background-color: #263238;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
-/* Navigation styling */
 nav {
-    background-color: #455a64;
+    background-color: #37474f;
     padding: 10px;
     text-align: center;
 }
@@ -69,29 +63,27 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #004a77;
+    color: #179ef2;
+    transform: scale(1.5); 
 }
 
-/* Section styling */
 section {
     padding: 20px;
     text-align: left;
+    background-color: #263238;
 }
 
-/* Footer styling */
 footer {
-    background-color: #263238;
-    color: #004a77;
+    background-color: #102027; 
+    color: #179ef2;
     padding: 10px;
     text-align: center;
 }
 
-/* Image styling */
 img {
     width: 20%;
 }
 
-/* Responsive image styling for smaller screens */
 @media(max-width: 768px) {
     img {
         width: 100%;
