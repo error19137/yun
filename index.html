@@ -1,61 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 
 <head>
-	<title>首頁 - Yun的網站</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script defer src="updatetime.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁 - Yun的網站</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="updatetime.js"></script>
 </head>
+
 <body>
-	<header>
-		<h1>
-			<font size="10">歡迎來到Yun的網站</font>
-		</h1>
+    <header>
+        <h1>
+            <font size="10">歡迎來到Yun的網站</font>
+        </h1>
+        <body>
+            <font size="3">現在時間：<span id="current-time"></span></font>
+            <script>
+                function showCurrentTime() {
+                    var now = new Date();
+                    var year = now.getFullYear();
+                    var month = padZero(now.getMonth() + 1);
+                    var day = padZero(now.getDate());
+                    var hours = padZero(now.getHours());
+                    var minutes = padZero(now.getMinutes());
+                    var seconds = padZero(now.getSeconds());
+                    var currentTimeStr = year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;
+                    document.getElementById('current-time').textContent = currentTimeStr;
+                }
 
-		<body>
-			<font size="3">現在時間：<span id="current-time"></span></font>
+                function padZero(num) {
+                    return (num < 10 ? '0' : '') + num;
+                }
 
-			<script>
-				function showCurrentTime() {
-					var now = new Date();
-					var year = now.getFullYear();
-					var month = padZero(now.getMonth() + 1);
-					var day = padZero(now.getDate());
-					var hours = padZero(now.getHours());
-					var minutes = padZero(now.getMinutes());
-					var seconds = padZero(now.getSeconds());
-					var currentTimeStr = year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;
-					document.getElementById('current-time').textContent = currentTimeStr;
-				}
-
-				function padZero(num) {
-					return (num < 10 ? '0' : '') + num;
-				}
-
-				setInterval(showCurrentTime, 1000);
-			</script>
-		</body>
-		<nav>
-			<ul>
-				<li><a href="/yun/index.html">首頁</a></li>
-				<li><a href="/yun/about.html">關於我</a></li>
-				<li><a href="/yun/contact.html">聯絡我</a></li>
-				<li><a href="/yun/portfolio.html">校內成績與作品</a></li>
-				<li><a href="/yun/friend.html">友情連結</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<h2>最新消息</h2>
-		<p>好多專題跟報告要用.......</p>
-		<!-- <h2>近期活動</h2>
-		<p></p> -->
-		<h2>行事曆</h2>
-		<p>2024/03/27 要第二次提報了 0.0 </p>
-	</main>
-	<footer>
+                setInterval(showCurrentTime, 1000);
+            </script>
+        </body>
+        <nav>
+            <ul>
+                <li><a href="/yun/index.html">首頁</a></li>
+                <li><a href="/yun/about.html">關於我</a></li>
+                <li><a href="/yun/contact.html">聯絡我</a></li>
+                <li><a href="/yun/portfolio.html">校內成績與作品</a></li>
+                <li><a href="/yun/friend.html">友情連結</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>最新消息</h2>
+        <p>好多專題跟報告要用.......</p>
+        <h2>行事曆</h2>
+        <p>2024/03/27 要第二次提報了 0.0 </p>
+        <!-- 下拉選單 -->
+        <label for="gradesAndWorks">校內成績與作品：</label>
+        <select id="gradesAndWorks" name="gradesAndWorks">
+            <option value="grades">校內成績</option>
+            <option value="works">作品集</option>
+        </select>
+    </main>
+    <footer>
 		<p class="logo"><a href="https://www.facebook.com/profile.php?id=100004653729307"><svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
