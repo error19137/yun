@@ -1,9 +1,9 @@
 @keyframes gradient {
     0%, 100% {
-        background: linear-gradient(to bottom, #70b7ea, #70b7ea, #70b7ea);
+        background: linear-gradient(to bottom, #383939, #383939, #383939);
     }
     50% {
-        background: linear-gradient(to bottom, #70b7ea, #70b7ea, #70b7ea);
+        background: linear-gradient(to bottom, #383939, #383939, #383939);
     }
 }
 
@@ -26,7 +26,7 @@ body {
 
 svg {
     width: 30px;
-    fill: #da6060;
+    fill: #1917b9;
     margin: 0 10px;
     transition: fill 0.3s ease;
 }
@@ -37,7 +37,7 @@ svg:hover {
 
 
 header {
-    background-color: #000000;
+    background-color: #383939;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -45,7 +45,7 @@ header {
 
 
 nav {
-    background-color: #f28888;
+    background-color: #1b0bcc;
     padding: 10px;
     text-align: center;
 }
@@ -62,7 +62,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000000;
+    color: #383939;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -79,7 +79,7 @@ section {
 
 
 footer {
-    background-color: #000000;
+    background-color: #383939;
     color: #fff;
     padding: 10px;
     text-align: center;
