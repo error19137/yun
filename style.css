@@ -1,10 +1,9 @@
-
 @keyframes gradient {
     0%, 100% {
-        background: linear-gradient(to bottom, #35476b, #35476b, #35476b);
+        background: linear-gradient(to bottom, #5c87a5, #5c87a5, #5c87a5);
     }
     50% {
-        background: linear-gradient(to bottom, #35476b, #35476b, #35476b);
+        background: linear-gradient(to bottom, #5c87a5, #5c87a5, #5c87a5);
     }
 }
 
@@ -13,9 +12,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     animation: gradient 10s ease-in-out infinite;
 }
+
 
 .logo {
     height: 100px;
@@ -26,7 +26,7 @@ body {
 
 svg {
     width: 30px;
-    fill: #4b0404;
+    fill: #710303;
     margin: 0 10px;
     transition: fill 0.3s ease;
 }
@@ -35,15 +35,17 @@ svg:hover {
     fill: #fff;
 }
 
+
 header {
-    background-color: #333;
+    background-color: #444;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
+
 nav {
-    background-color: #e56e6e;
+    background-color: #d36262;
     padding: 10px;
     text-align: center;
 }
@@ -60,7 +62,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: #555;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -75,8 +77,9 @@ section {
     text-align: left;
 }
 
+
 footer {
-    background-color: #333;
+    background-color: #444;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -86,6 +89,7 @@ footer {
 img {
     width: 20%;
 }
+
 
 @media(max-width: 768px) {
     img {
